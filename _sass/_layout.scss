@@ -6,14 +6,15 @@
     top: 0;
     bottom: 0;
     width: 300px;
-    background: rgba($main-green, .8);
+    background: rgba($main-green, .9);
     position: fixed;
+    z-index: 200;
 }
 
 .site-title {
     text-align: center;
     display: block;
-    padding: 30px 40px 0 40px;
+    padding: 30px 30px 0 30px;
     margin-bottom: 40px;
 
     img {
@@ -36,7 +37,7 @@
         text-transform: uppercase;
         color: white;
         display: block;
-        padding: 0 20px;
+        padding: 0 30px;
 
         &:hover {
             background: $main-green-dark;
@@ -53,6 +54,7 @@
     line-height: 0;
     padding-top: 10px;
     text-align: center;
+    display: none;
 
     > svg {
         width: 18px;
@@ -70,6 +72,10 @@
  */
 
 .gallery {
-    background: url("../assets/photos/01.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../assets/photos/02.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
