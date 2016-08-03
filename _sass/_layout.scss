@@ -21,6 +21,30 @@
     }
 }
 
+.main-nav {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        height: 30px;
+        line-height: 30px;
+        font-size: $font-smaller;
+        text-transform: uppercase;
+        color: white;
+        display: block;
+        padding: 0 20px;
+
+        &:hover {
+            background: $main-green-dark;
+            text-decoration: none;
+        }
+    }
+}
+
 .menu-icon {
     display: block;
     float: right;
@@ -45,7 +69,7 @@
  * Home gallery
  */
 
- .gallery {
-    background: url("/assets/photos/01.jpg");
+.gallery {
+    background: url("../assets/photos/01.jpg");
     background-size: 100%;
- }
+}
