@@ -14,15 +14,7 @@
 
   <ul class="main-nav">
     <li><a href="index">Home</a></li>
-    <li>
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">
-          {{ my_page.title }}
-        </a>
-        {% endif %}
-      {% endfor %}
-    </li>
+    <li><a href="perfil">Perfil</a></li>
     <li><a href="como-trabalhamos">Como trabalhamos</a></li>
     <li><a href="portfolio">Portfólio</a></li>
     <li><a href="imprensa">Imprensa</a></li>
