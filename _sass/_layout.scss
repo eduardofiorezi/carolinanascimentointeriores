@@ -76,17 +76,40 @@
     padding: 40px 40px 30px 40px;
 
     h2 {
-        margin: 30px 0 10px 0;
+        margin: 20px 0 10px 0;
         text-transform: uppercase;
         font-size: $font-small;
         font-weight: bold;
         color: $main-green;
     }
 
-    p {
+    p,
+    li {
         font-size: $font-small;
         line-height: 22px;
+    }
+
+    p {
         margin: 0 0 10px 0;
+    }
+
+    ul {
+        margin: 0 0 15px 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li:before {
+        content: ".";
+    }​
+
+    .bullet {
+        background: $main-green;
+        height: 5px;
+        width: 5px;
     }
 }
 
