@@ -68,6 +68,21 @@
 
 
 /**
+ * Content entry
+ */
+
+.entry {
+    margin-right: 300px;
+    padding: 40px 40px 30px 40px;
+
+    p {
+        font-size: $font-small;
+        line-height: 22px;
+    }
+}
+
+
+/**
  * Home gallery
  */
 
