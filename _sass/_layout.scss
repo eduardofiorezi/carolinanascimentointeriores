@@ -77,10 +77,6 @@
 
     h2 {
         margin: 20px 0 10px 0;
-        text-transform: uppercase;
-        font-size: $font-small;
-        font-weight: bold;
-        color: $main-green;
     }
 
     p,
@@ -92,11 +88,11 @@
     p {
         margin: 0 0 10px 0;
     }
+}
 
-    ul {
-        margin: 0 0 15px 10px;
-        padding: 0;
-    }
+.simple-list {
+    margin: 0 0 15px 10px;
+    padding: 0;
 
     li {
         list-style-type: none;
@@ -109,6 +105,11 @@
         margin-right: 3px;
     }
 }
+
+
+/**
+ * Image aside
+ */
 
 .entry.with-image {
     margin-left: 300px;
@@ -125,6 +126,39 @@
     background-size: 500px;
     background-position: -110px 0;
     background-repeat: no-repeat;
+}
+
+
+/**
+ * Home gallery
+ */
+
+.portfolio-list {
+    padding: 0;
+    margin: 20px 300px 0 20px;
+
+    li {
+        width: 212px;
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 20px 20px 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        margin: 10px 0 0 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover img {
+        opacity: .8;
+    }
 }
 
 

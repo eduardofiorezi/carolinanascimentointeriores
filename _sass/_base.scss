@@ -85,6 +85,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-size: $font-small;
+    font-weight: bold;
+    color: $main-green;
+}
+
 
 /**
  * Links
