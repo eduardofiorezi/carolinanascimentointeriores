@@ -110,6 +110,23 @@
     }
 }
 
+.entry.with-image {
+    margin-left: 300px;
+}
+
+.images-aside {
+    width: 300px;
+    height: 700px;
+    float: left;
+}
+
+.profile-image {
+    background-image: url("../assets/carol.jpg");
+    background-size: 500px;
+    background-position: -110px 0;
+    background-repeat: no-repeat;
+}
+
 
 /**
  * Home gallery
