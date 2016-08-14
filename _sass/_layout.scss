@@ -122,9 +122,10 @@
 }
 
 .profile-image {
+    height: 100vh;
     background-image: url("../assets/carol.jpg");
-    background-size: 500px;
-    background-position: -110px 0;
+    background-size: 400px;
+    background-position: -55px 0;
     background-repeat: no-repeat;
 }
 
@@ -138,7 +139,7 @@
     margin: 20px 300px 0 20px;
 
     li {
-        width: 212px;
+        width: 210px;
         list-style-type: none;
         display: inline-block;
         margin: 0 20px 20px 0;
