@@ -3,100 +3,12 @@ layout: default
 ---
 
 <ul class="portfolio-list">
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
-  <li>
-    <a href="projeto.html">
-      <img src="assets/projects/cef/01.jpg">
-      <h2>Apartamento CEF</h2>
-    </a>
-  </li>
+  {% for project in site.data.projects %}
+    <li>
+      <a href="projeto.html">
+        <img src="assets/projects/{{ project.folder }}/01.jpg">
+        <h2>{{ project.name}}</h2>
+      </a>
+    </li>
+  {% endfor %}
 </ul>
