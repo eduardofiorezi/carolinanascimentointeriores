@@ -131,7 +131,7 @@
 
 
 /**
- * Home gallery
+ * Portfolio list
  */
 
 .portfolio-list {
@@ -159,6 +159,22 @@
 
     a:hover img {
         opacity: .8;
+    }
+}
+
+
+/**
+ * Portfolio gallery
+ */
+
+.portfolio-gallery {
+    width: 700px;
+    padding: 10px;
+    background: #f2f2f2;
+    margin: auto;
+
+    img {
+        width: 100%;
     }
 }
 
