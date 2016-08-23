@@ -168,11 +168,31 @@
  */
 
 .portfolio-gallery {
-    width: 660px;
+    width: 700px;
     padding: 10px;
-    background: #f2f2f2;
+    background: $light-gray;
     margin: auto;
     margin-bottom: 10px;
+
+    a {
+        border-radius: 2px;
+        text-transform: uppercase;
+        font-size: $font-small;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        background: $main-green;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 10px;
+        margin-top: 10px;
+        opacity: .9;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 
     img {
         width: 100%;
