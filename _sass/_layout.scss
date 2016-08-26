@@ -79,6 +79,7 @@
     h2 {
         margin: 20px 0 10px 0;
         letter-spacing: 1px;
+        font-weight: normal;
     }
 
     p,
@@ -210,9 +211,10 @@
         background: $main-green;
         border-radius: 3px;
         color: #fff;
-        font-weight: bold;
+        font-weight: normal;
         text-transform: uppercase;
         font-size: $font-small;
+        letter-spacing: 1px;
 
         &:hover {
             opacity: .8;
@@ -277,7 +279,8 @@
         border-radius: 2px;
         text-transform: uppercase;
         font-size: $font-small;
-        font-weight: bold;
+        font-weight: normal;
+        letter-spacing: 1px;
         color: #fff;
         text-decoration: none;
         background: $main-green;
