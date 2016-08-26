@@ -88,6 +88,19 @@
     p {
         margin: 0 0 10px 0;
     }
+
+    .column-01,
+    .column-02 {
+        width: 40%;
+    }
+
+    .column-01 {
+        float: left;
+    }
+
+    .column-02 {
+        float: right;
+    }
 }
 
 .simple-list {
