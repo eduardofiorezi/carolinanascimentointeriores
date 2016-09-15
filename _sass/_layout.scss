@@ -35,7 +35,34 @@
 
         @media (max-width: 686px) {
             width: 160px;
+            margin-bottom: 20px;
         }
+    }
+}
+
+#menu-trigger {
+    border-radius: 2px;
+    height: 30px;
+    line-height: 30px;
+    font-size: $font-smaller;
+    background: $main-green-dark;
+    color: #fff;
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 0 10px;
+
+    @media (max-width: 686px) {
+        display: inline-block;
+    }
+}
+
+.header-entry {
+
+    @media (max-width: 686px) {
+        display: none;
     }
 }
 

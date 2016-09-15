@@ -3,8 +3,7 @@ Main = {
 
     /* mobile nav */
     $("#menu-trigger").click(function() {
-      $("#main-header nav ul").toggle();
-      $(".header-form").hide();
+      $(".header-entry").toggle();
     });
 
   }
