@@ -67,6 +67,51 @@
     }
 }
 
+.social {
+    background: $main-green-dark;
+    padding: 20px 25px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    li:first-child {
+        margin-right: 35px;
+    }
+
+    a {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-size: $font-small;
+        text-decoration: none;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    span {
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+        margin-right: 10px;
+        float: left;
+        background-image: url("/assets/social.png");
+    }
+
+    .instagram {
+        background-position: 0 -30px;
+    }
+}
+
 
 /**
  * Content entry
