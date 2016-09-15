@@ -28,22 +28,40 @@
 
     li {
         list-style-type: none;
+        position: relative;
     }
 
     a {
         height: 30px;
         line-height: 30px;
         font-size: $font-smaller;
-        text-transform: uppercase;
         color: white;
+        text-transform: uppercase;
         display: block;
         padding: 0 30px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
 
         &:hover {
             background: $main-green-dark;
             text-decoration: none;
         }
+    }
+
+    .active-link {
+        background: rgba($main-green-dark, .5);
+    }
+
+    .active-link:before {
+        content: " ";
+        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        display: inline-block;
+        line-height: 30px;
+        position: absolute;
+        left: 13px;
+        top: 11px;
     }
 }
 
