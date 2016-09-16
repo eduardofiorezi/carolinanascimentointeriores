@@ -15,17 +15,17 @@
   <div class="header-entry">
 
     <ul class="main-nav">
-      <li><a href="index" class="active-link">Home</a></li>
-      <li><a href="perfil">Perfil</a></li>
-      <li><a href="como-trabalhamos">Como trabalhamos</a></li>
+      <li><a href="index"  {% if page.active == "index" %}  class="active-link"{% endif %}>Home</a></li>
+      <li><a href="perfil" {% if page.active == "perfil" %} class="active-link"{% endif %}>Perfil</a></li>
+      <li><a href="como-trabalhamos" {% if page.active == "como-trabalhamos" %} class="active-link"{% endif %}>Como trabalhamos</a></li>
       <!-- <li><a href="portfolio">Portfólio</a></li>
       <li><a href="imprensa">Imprensa</a></li> -->
-      <li><a href="contato">Contato</a></li>
+      <li><a href="contato" {% if page.active == "contato" %} class="active-link"{% endif %}>Contato</a></li>
     </ul>
 
     <ul class="social">
-      <li><a href="#"><span class="facebook"></span> Facebook</a></li>
-      <li><a href="#"><span class="instagram"></span> Instagram</a></li>
+      <li><a href="https://www.facebook.com/carolinanascimentointeriores"><span class="facebook"></span> Facebook</a></li>
+      <li><a href="https://www.instagram.com/muradin_obulldog/"><span class="instagram"></span> Instagram</a></li>
     </ul>
 
   </div>
