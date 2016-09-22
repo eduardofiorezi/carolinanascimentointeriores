@@ -7,7 +7,7 @@ Main = {
     });
 
     /* home gallery */
-    $("#home body").vegas({
+    $("#home").vegas({
        slides: [
          { src: "../assets/photos/01.jpg" },
          { src: "../assets/photos/02.jpg" },
