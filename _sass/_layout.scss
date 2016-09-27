@@ -195,6 +195,7 @@
     @media (max-width: 686px) {
         margin-right: 0;
         padding: 40px 20px 30px 20px;
+        background: red;
     }
 
     h2 {
@@ -430,8 +431,13 @@
     background: $light-gray;
     margin: auto;
     margin-bottom: 10px;
+    position: relative;
 
-    a {
+    @media (max-width: 686px) {
+        width: 100%;
+    }
+
+    .back {
         border-radius: 2px;
         text-transform: uppercase;
         font-size: $font-small;
@@ -445,6 +451,14 @@
         line-height: 36px;
         padding: 0 10px;
         margin-top: 10px;
+        position: absolute;
+        right: 0;
+        bottom: 18px;
+        margin-right: 10px;
+
+        @media (max-width: 686px) {
+            margin-right: 2%;
+        }
 
         &:hover {
             opacity: .7;

@@ -6,6 +6,9 @@ Main = {
       $(".header-entry").toggle();
     });
 
+    /* project gallery */
+    $('.bxslider').bxSlider();
+
     /* home gallery */
     $("#home").vegas({
        slides: [
