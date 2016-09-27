@@ -193,8 +193,9 @@
     padding: 40px 40px 30px 40px;
 
     @media (max-width: 686px) {
-        margin-right: 0;
-        padding: 40px 20px 30px 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 0;
         background: red;
     }
 
@@ -435,6 +436,7 @@
 
     @media (max-width: 686px) {
         width: 100%;
+        padding: 0;
     }
 
     .back {
@@ -457,7 +459,8 @@
         margin-right: 10px;
 
         @media (max-width: 686px) {
-            margin-right: 2%;
+            margin-right: 0;
+            bottom: -45px;
         }
 
         &:hover {
