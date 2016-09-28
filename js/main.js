@@ -12,10 +12,10 @@ Main = {
     /* home gallery */
     $("#home").vegas({
        slides: [
-         { src: "../assets/photos/01.jpg" },
-         { src: "../assets/photos/02.jpg" },
-         { src: "../assets/photos/03.jpg" },
-         { src: "../assets/photos/04.jpg" }
+         { src: "../assets/projects/cef/01.jpg" },
+         { src: "../assets/projects/cef/02.jpg" },
+         { src: "../assets/projects/cef/03.jpg" },
+         { src: "../assets/projects/cef/04.jpg" }
        ]
     });
 

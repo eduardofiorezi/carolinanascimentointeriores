@@ -440,6 +440,14 @@
         background: none;
     }
 
+    h1 {
+        font-size: $font-medium;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+        color: $main-green;
+        font-weight: bold;
+    }
+
     .back {
         border-radius: 2px;
         text-transform: uppercase;

@@ -43,7 +43,7 @@
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
-	bottom: -30px;
+	bottom: -48px;
 	width: 100%;
 }
 
@@ -94,7 +94,7 @@
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #000;
+	background: #00c2ad;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
