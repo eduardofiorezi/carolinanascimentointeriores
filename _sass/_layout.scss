@@ -392,7 +392,8 @@
  * Portfolio list
  */
 
-.portfolio-list {
+.portfolio-list,
+.imprensa-list {
     padding: 0;
     margin: 20px 300px 0 20px;
 
@@ -422,6 +423,16 @@
 
     h2 {
         margin: 10px 0 0 0;
+    }
+
+    span {
+        background: $main-green;
+        color: #fff;
+        font-size: 10px;
+        text-transform: uppercase;
+        padding: 2px 3px 1px 3px;
+        display: block;
+        margin-top: 3px;
     }
 
     a {
