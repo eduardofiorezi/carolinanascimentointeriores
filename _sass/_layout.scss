@@ -426,6 +426,7 @@
         list-style-type: none;
         display: inline-block;
         margin: 0 20px 20px 0;
+        vertical-align: top;
 
         @media (max-width: 686px) {
             width: 100%;
@@ -465,13 +466,12 @@
     }
 
     span {
-        background: $main-green;
-        color: #fff;
+        color: $grey-color;
         font-size: 10px;
         text-transform: uppercase;
-        padding: 2px 3px 1px 3px;
         display: block;
         margin-top: 3px;
+        min-height: 30px;
     }
 
     a {
