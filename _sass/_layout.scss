@@ -109,6 +109,26 @@
     }
 }
 
+.submenu {
+    margin-bottom: 5px;
+    display: none;
+
+    a {
+        height: 23px;
+        line-height: 23px;
+        text-transform: none;
+
+        &:hover {
+            background: none;
+            opacity: .8;
+        }
+    }
+}
+
+#portfolio .submenu {
+    display: block;
+}
+
 .menu-icon {
     display: block;
     float: right;
