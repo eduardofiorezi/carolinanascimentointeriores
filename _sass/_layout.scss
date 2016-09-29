@@ -449,7 +449,8 @@
  * Portfolio gallery
  */
 
-.portfolio-gallery {
+.portfolio-gallery,
+.imprensa-gallery {
     width: 700px;
     min-height: 300px;
     padding: 10px;
@@ -467,9 +468,15 @@
     h1 {
         font-size: $font-medium;
         text-transform: uppercase;
-        margin: 0 0 10px 0;
         color: $main-green;
         font-weight: bold;
+    }
+
+    > span {
+        font-size: $font-medium;
+        margin: 0 0 7px 0;
+        display: inline-block;
+        color: $grey-color;
     }
 
     .back {
@@ -504,6 +511,14 @@
     img {
         width: 100%;
     }
+}
+
+.portfolio-gallery h1 {
+    margin: 0 0 8px 0;
+}
+
+.imprensa-gallery h1 {
+    margin: 0 0 -2px 0;
 }
 
 
