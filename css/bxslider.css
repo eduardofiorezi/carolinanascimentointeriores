@@ -40,13 +40,6 @@
     	transform: translatez(0);
 }
 
-.bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
-	position: absolute;
-	bottom: -48px;
-	width: 100%;
-}
-
 /* LOADER */
 
 .bx-wrapper .bx-loading {
@@ -62,14 +55,17 @@
 
 /* PAGER */
 
+.bx-wrapper {
+	width: auto !important;
+	max-width: auto !important;
+}
+
 .bx-wrapper .bx-pager {
-	width: 100px;
 	text-align: left;
 	font-size: .85em;
-	font-family: Arial;
-	font-weight: bold;
+	margin-top: 28px;
 	color: #666;
-	float: right;
+	float: left;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,

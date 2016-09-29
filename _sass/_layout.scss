@@ -457,7 +457,6 @@
     background: $light-gray;
     margin: auto;
     margin-bottom: 10px;
-    position: relative;
 
     @media (max-width: 686px) {
         width: 100%;
@@ -479,6 +478,13 @@
         color: $grey-color;
     }
 
+    img {
+        width: 100%;
+    }
+}
+
+.gallery-bottom {
+
     .back {
         border-radius: 2px;
         text-transform: uppercase;
@@ -492,24 +498,12 @@
         height: 36px;
         line-height: 36px;
         padding: 0 10px;
-        margin-top: 10px;
-        position: absolute;
-        right: 0;
-        bottom: 18px;
-        margin-right: 10px;
-
-        @media (max-width: 686px) {
-            margin-right: 0;
-            bottom: -35px;
-        }
+        margin-top: -43px;
+        float: right;
 
         &:hover {
             opacity: .7;
         }
-    }
-
-    img {
-        width: 100%;
     }
 }
 
