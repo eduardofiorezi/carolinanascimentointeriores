@@ -444,10 +444,10 @@
         }
 
         img {
+            clip: rect(0, 350px, 140px, 0);
             width: 210px;
             position: absolute;
             left: 0;
-            clip: rect(0, 350px, 140px, 0);
             top: 0;
 
             @media (max-width: 686px) {
@@ -455,6 +455,7 @@
                 height: auto;
                 width: 100%;
                 clip: rect(0,0,0,0);
+
                 top: none;
                 left: none;
             }
