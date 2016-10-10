@@ -283,7 +283,8 @@
 
     @media (max-width: 686px) {
 
-        margin-left: 0;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
@@ -311,6 +312,7 @@
         background-size: 200px;
         background-position: 0 0;
         margin: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -323,8 +325,10 @@
     margin: 0;
 
     @media (max-width: 686px) {
-
+        width: 290px;
+        margin: auto;
         position: inherit;
+        margin-bottom: 20px;
         top: none;
         left: none;
     }
