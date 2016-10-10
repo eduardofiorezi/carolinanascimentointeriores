@@ -452,40 +452,44 @@
     padding: 0;
     margin: 20px 300px 0 20px;
 
+    @media (max-width: 960px) {
+        margin-right: 320px;
+    }
+
     @media (max-width: 686px) {
         margin: 20px 20px 0 20px;
     }
 
     li {
-        width: 210px;
+        width: 420px;
         list-style-type: none;
         display: inline-block;
         margin: 0 20px 20px 0;
         vertical-align: top;
 
-        @media (max-width: 686px) {
+        @media (max-width: 960px) {
             width: 100%;
         }
 
         .crop {
             position: relative;
-            width: 210px;
-            height: 140px;
+            width: 420px;
+            height: 280px;
 
-            @media (max-width: 686px) {
+            @media (max-width: 960px) {
                 height: auto;
                 width: auto;
             }
         }
 
         img {
-            clip: rect(0, 350px, 140px, 0);
-            width: 210px;
+            clip: rect(0, 420px, 280px, 0);
+            width: 420px;
             position: absolute;
             left: 0;
             top: 0;
 
-            @media (max-width: 686px) {
+            @media (max-width: 960px) {
                 position: inherit;
                 height: auto;
                 width: 100%;
