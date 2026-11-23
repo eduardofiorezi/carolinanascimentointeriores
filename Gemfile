@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
-ruby '3.4.1'
+ruby file: '.tool-versions'
 
 gem 'jekyll', '4.4.1'
+gem 'logger'
