@@ -17,7 +17,7 @@ Main = {
       var slides = homeImage.dataset.slides.split(",").map(function(src) {
         return { src: src };
       });
-      $("#home").vegas({ slides: slides });
+      vegas("#home", { slides: slides });
     }
 
   }
