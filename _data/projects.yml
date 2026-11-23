@@ -1,4 +1,5 @@
 - name: Apartamento CEF
+  summary: Cozinha integrada à sala de jantar
   url: /projeto.html
   photos:
   - src: /assets/projects/cef/01.webp
@@ -18,6 +19,7 @@
     width: 1600
     height: 1067
 - name: Apartamento JRL
+  summary: Sala de estar com nichos iluminados
   url: /apartamento-jrl.html
   photos:
   - src: /assets/projects/jrrl/01.webp

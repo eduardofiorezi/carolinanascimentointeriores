@@ -16,7 +16,10 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	row-gap: 4px;
+	margin: 0 auto 8px;
 	padding: 0;
 	*zoom: 1;
 	touch-action: pan-y;
@@ -31,6 +34,9 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
+	grid-column: 1 / -1;
+	grid-row: 1;
+	min-width: 0;
 	background: #fff;
 
 	/*fix other elements on the page moving (on Chrome)*/
@@ -56,73 +62,93 @@
 
 /* PAGER */
 
-.bx-wrapper {
-	width: auto !important;
-	max-width: auto !important;
+.bx-wrapper .bx-controls {
+	display: contents;
+}
+
+.bx-wrapper .photo-position {
+	grid-column: 1;
+	grid-row: 2;
+	align-self: center;
+	font-size: 14px;
+	font-variant-numeric: tabular-nums;
 }
 
 .bx-wrapper .bx-pager {
-	text-align: left;
-	font-size: .85em;
-	margin-top: 28px;
-	color: #666;
-	float: left;
+	grid-column: 2;
+	grid-row: 2;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
 }
 
-.bx-wrapper .bx-pager .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-	display: inline-block;
-	*zoom: 1;
-	*display: inline;
+.bx-wrapper .bx-pager-link,
+.bx-wrapper .bx-controls-direction a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	font-size: 0;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a {
-	background: #666;
-	text-indent: -9999px;
-	display: block;
-	width: 10px;
-	height: 10px;
-	margin: 0 5px;
-	outline: 0;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+.bx-wrapper .bx-pager-link {
+	color: inherit;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #00c2ad;
+.bx-wrapper .bx-pager-link::before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border: 2px solid currentColor;
+	border-radius: 50%;
+}
+
+.bx-wrapper .bx-pager-link.active::before,
+.bx-wrapper .bx-pager-link:hover::before {
+	background: currentColor;
+}
+
+.bx-wrapper .bx-pager-link:focus-visible,
+.bx-wrapper .bx-controls-direction a:focus-visible {
+	outline: 3px solid currentColor;
+	outline-offset: -4px;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
-}
-
-.bx-wrapper .bx-next {
-	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
-}
-
-.bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
-}
-
-.bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+.bx-wrapper .bx-controls-direction {
+	grid-column: 1 / -1;
+	grid-row: 1;
+	align-self: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 8px;
+	z-index: 1;
+	pointer-events: none;
 }
 
 .bx-wrapper .bx-controls-direction a {
-	position: absolute;
-	top: 50%;
-	margin-top: -16px;
-	outline: 0;
-	width: 32px;
-	height: 32px;
-	text-indent: -9999px;
-	z-index: 9999;
+	color: white;
+	background: #18332f;
+	border-radius: 50%;
+	pointer-events: auto;
+}
+
+.bx-wrapper .bx-controls-direction a::before {
+	content: "";
+	width: 9px;
+	height: 9px;
+	border: solid currentColor;
+	border-width: 2px 2px 0 0;
+}
+
+.bx-wrapper .bx-prev::before {
+	transform: translateX(2px) rotate(-135deg);
+}
+
+.bx-wrapper .bx-next::before {
+	transform: translateX(-2px) rotate(45deg);
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {

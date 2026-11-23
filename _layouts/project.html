@@ -2,15 +2,23 @@
 layout: default
 ---
 {% assign project = site.data.projects | where: 'url', page.url | first %}
+{% capture message %}Olá, Carolina! Vi o {{ project.name }} no seu portfólio e gostaria de conversar sobre o meu espaço.{% endcapture %}
 <div class="entry">
   <div class="portfolio-gallery">
     <h1>{{ project.name | escape }}</h1>
+    {% if project.summary %}<p class="project-summary">{{ project.summary | escape }}</p>{% endif %}
     <div class="gallery-bottom">
       <div class="bxslider">
         {% for photo in project.photos %}
         <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}">
         {% endfor %}
       </div>
+    </div>
+    <div class="project-actions">
+      <a class="project-contact" href="{{ site.data.contact.whatsapp_url }}?text={{ message | url_encode }}" target="_blank" rel="noopener">
+        <img src="{{ '/assets/whatsapp.svg' | relative_url }}" width="20" height="20" alt="">
+        Conversar com a Carolina no WhatsApp
+      </a>
       <a class="back" href="{{ '/portfolio.html' | relative_url }}">Voltar ao portfólio</a>
     </div>
   </div>

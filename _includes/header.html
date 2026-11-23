@@ -10,14 +10,15 @@
       <li><a href="{{ '/' | relative_url }}"{% if page.active == 'index' %} class="active-link" aria-current="page"{% endif %}>Início</a></li>
       <li><a href="{{ '/perfil.html' | relative_url }}"{% if page.active == 'perfil' %} class="active-link" aria-current="page"{% endif %}>Perfil</a></li>
       <li><a href="{{ '/como-trabalhamos.html' | relative_url }}"{% if page.active == 'como-trabalhamos' %} class="active-link" aria-current="page"{% endif %}>Como trabalhamos</a></li>
-      <li><a href="{{ '/portfolio.html' | relative_url }}"{% if page.active == 'portfolio' %} class="active-link" aria-current="page"{% endif %}>Portfólio</a></li>
+      <li><a href="{{ '/portfolio.html' | relative_url }}"{% if page.active == 'portfolio' %} class="active-link" aria-current="page"{% elsif page.layout == 'project' %} class="active-link" aria-current="location"{% endif %}>Portfólio</a></li>
       <li><a href="{{ '/imprensa.html' | relative_url }}"{% if page.active == 'imprensa' %} class="active-link" aria-current="page"{% endif %}>Imprensa</a></li>
-      <li><a href="{{ '/contato.html' | relative_url }}"{% if page.active == 'contato' %} class="active-link" aria-current="page"{% endif %}>Contato</a></li>
     </ul>
 
-    <ul class="social">
-      <li><a href="https://www.facebook.com/carolinanascimentointeriores" target="_blank" rel="noopener"><span class="facebook"></span> Facebook</a></li>
-      <li><a href="https://www.instagram.com/carolina_nascimento_interiores" target="_blank" rel="noopener"><span class="instagram"></span> Instagram</a></li>
-    </ul>
+    <div class="social">
+      <a href="{{ site.data.contact.whatsapp_url }}" target="_blank" rel="noopener" aria-label="WhatsApp de Carolina Nascimento, {{ site.data.contact.whatsapp_display }}">
+        <img src="{{ '/assets/whatsapp.svg' | relative_url }}" width="30" height="30" alt="">WhatsApp
+      </a>
+      <a href="https://www.instagram.com/carolina.nascimento.interiores/" target="_blank" rel="noopener"><span class="instagram" aria-hidden="true"></span>Instagram</a>
+    </div>
   </nav>
 </header>

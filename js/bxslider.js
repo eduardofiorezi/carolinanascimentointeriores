@@ -833,9 +833,9 @@
         return;
       }
       // remove all pager active classes
-      slider.pagerEl.find('a').removeClass('active');
+      slider.pagerEl.find('a').removeClass('active').removeAttr('aria-current');
       // apply the active class for all pagers
-      slider.pagerEl.each(function(i, el) { $(el).find('a').eq(slideIndex).addClass('active'); });
+      slider.pagerEl.each(function(i, el) { $(el).find('a').eq(slideIndex).addClass('active').attr('aria-current', 'true'); });
     };
 
     /**
