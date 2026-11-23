@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Apartamento decorado Solar Alta Vista
+description: Galeria do apartamento decorado Solar Alta Vista da construtora Yticon, desenvolvido através da Spagnuolo Arquitetura.
+noindex: true
 ---
 
 <div class="entry">
@@ -9,12 +12,12 @@ layout: default
     <span>Através da Spagnuolo Arquitetura</span>
     <div class="gallery-bottom">
       <div class="bxslider">
-        <img src="assets/projects/cef/01.jpg">
-        <img src="assets/projects/cef/02.jpg">
-        <img src="assets/projects/cef/03.jpg">
-        <img src="assets/projects/cef/04.jpg">
+        {% assign project = site.data.projects | first %}
+        {% for photo in project.photos %}
+        <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}">
+        {% endfor %}
       </div>
-      <a class="back" href="imprensa.html">Voltar</a>
+      <a class="back" href="{{ '/imprensa.html' | relative_url }}">Voltar à imprensa</a>
     </div>
   </div>
 

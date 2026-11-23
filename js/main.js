@@ -3,21 +3,22 @@ Main = {
 
     /* mobile nav */
     $("#menu-trigger").click(function() {
-      $(".header-entry").toggle();
+      var menu = $("#site-navigation");
+      menu.toggleClass("is-open");
+      $(this).attr("aria-expanded", menu.hasClass("is-open") ? "true" : "false");
     });
 
     /* project gallery */
     $('.bxslider').bxSlider();
 
     /* home gallery */
-    $("#home").vegas({
-       slides: [
-         { src: "../assets/projects/cef/01.jpg" },
-         { src: "../assets/projects/cef/02.jpg" },
-         { src: "../assets/projects/cef/03.jpg" },
-         { src: "../assets/projects/cef/04.jpg" }
-       ]
-    });
+    var homeImage = document.querySelector(".home-image");
+    if (homeImage && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      var slides = homeImage.dataset.slides.split(",").map(function(src) {
+        return { src: src };
+      });
+      $("#home").vegas({ slides: slides });
+    }
 
   }
 }

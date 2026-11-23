@@ -1,5 +1,16 @@
 ---
 layout: default
+title: Arquitetura de interiores em Londrina
 active: index
 body_id: home
 ---
+{% assign project = site.data.projects | first %}
+{% assign photo = project.photos | first %}
+{% capture slides %}{% for slide in project.photos %}{{ slide.src | relative_url }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+<img class="home-image" src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}"
+     width="{{ photo.width }}" height="{{ photo.height }}" fetchpriority="high" data-slides="{{ slides | escape }}">
+<div class="home-intro">
+  <h1>Arquitetura de interiores em Londrina</h1>
+  <p>Projetos residenciais, comerciais e corporativos personalizados e consultoria de ambientes.</p>
+  <a href="{{ '/portfolio.html' | relative_url }}">Conheça os projetos</a>
+</div>
