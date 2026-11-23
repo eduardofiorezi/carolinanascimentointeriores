@@ -1,5 +1,34 @@
 - name: Apartamento CEF
-  folder: cef
+  url: /projeto.html
+  photos:
+  - src: /assets/projects/cef/01.webp
+    alt: Cozinha e sala de jantar integradas, com mesa de madeira e luminárias pendentes
+    width: 1600
+    height: 1067
+  - src: /assets/projects/cef/02.webp
+    alt: Sala de jantar integrada à sala de estar, com estante iluminada ao lado
+    width: 1600
+    height: 1067
+  - src: /assets/projects/cef/03.webp
+    alt: Sala de estar com sofá junto à mesa de jantar e vista para a cozinha
+    width: 1600
+    height: 1067
+  - src: /assets/projects/cef/04.webp
+    alt: Bancada da cozinha com frutas e vista para a sala e a estante iluminada
+    width: 1600
+    height: 1067
 - name: Apartamento JRL
-  folder: jrrl
-
+  url: /apartamento-jrl.html
+  photos:
+  - src: /assets/projects/jrrl/01.webp
+    alt: Sala de estar com sofá de couro e iluminação nos nichos do painel da TV
+    width: 1600
+    height: 1200
+  - src: /assets/projects/jrrl/02.webp
+    alt: Tampo de madeira com luminária articulada e bancada com banquetas ao fundo
+    width: 1600
+    height: 1200
+  - src: /assets/projects/jrrl/03.webp
+    alt: Mesa com cadeiras escuras e pendente junto à janela
+    width: 1200
+    height: 1600

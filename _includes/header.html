@@ -1,45 +1,23 @@
 <header class="site-header">
-
-  <a class="site-title" href="{{ site.baseurl }}/">
-    <img src="assets/logo-white.png">
+  <a class="site-title" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/logo-white.png' | relative_url }}" width="460" height="278" alt="Carolina Nascimento Interiores">
   </a>
 
-  <a href="#" class="menu-icon">
-    <svg viewBox="0 0 18 15">
-      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-      <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-      <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-    </svg>
-  </a>
+  <button type="button" id="menu-trigger" aria-expanded="false" aria-controls="site-navigation">Menu</button>
 
-  <div class="header-entry">
-
+  <nav class="header-entry" id="site-navigation" aria-label="Navegação principal">
     <ul class="main-nav">
-      <li><a href="index" {% if page.active == "index" %}  class="active-link"{% endif %}>Home</a></li>
-      <li><a href="perfil" {% if page.active == "perfil" %} class="active-link"{% endif %}>Perfil</a></li>
-      <li><a href="como-trabalhamos" {% if page.active == "como-trabalhamos" %} class="active-link"{% endif %}>Como trabalhamos</a></li>
-      <li>
-        <a href="portfolio">
-          Portfólio
-        </a>
-        <div class="submenu">
-          <a href="#">- Residencial</a>
-          <a href="#">- Comercial</a>
-          <a href="#">- Corporativo</a>
-          <a href="#">- Incorporação</a>
-        </div>
-      </li>
-      <li><a href="imprensa">Imprensa</a></li>
-      <li><a href="contato" {% if page.active == "contato" %} class="active-link"{% endif %}>Contato</a></li>
+      <li><a href="{{ '/' | relative_url }}"{% if page.active == 'index' %} class="active-link" aria-current="page"{% endif %}>Início</a></li>
+      <li><a href="{{ '/perfil.html' | relative_url }}"{% if page.active == 'perfil' %} class="active-link" aria-current="page"{% endif %}>Perfil</a></li>
+      <li><a href="{{ '/como-trabalhamos.html' | relative_url }}"{% if page.active == 'como-trabalhamos' %} class="active-link" aria-current="page"{% endif %}>Como trabalhamos</a></li>
+      <li><a href="{{ '/portfolio.html' | relative_url }}"{% if page.active == 'portfolio' %} class="active-link" aria-current="page"{% endif %}>Portfólio</a></li>
+      <li><a href="{{ '/imprensa.html' | relative_url }}"{% if page.active == 'imprensa' %} class="active-link" aria-current="page"{% endif %}>Imprensa</a></li>
+      <li><a href="{{ '/contato.html' | relative_url }}"{% if page.active == 'contato' %} class="active-link" aria-current="page"{% endif %}>Contato</a></li>
     </ul>
 
     <ul class="social">
-      <li><a href="https://www.facebook.com/carolinanascimentointeriores" target="_blank"><span class="facebook"></span> Facebook</a></li>
-      <li><a href="https://www.instagram.com/carolina_nascimento_interiores" target="_blank"><span class="instagram"></span> Instagram</a></li>
+      <li><a href="https://www.facebook.com/carolinanascimentointeriores" target="_blank" rel="noopener"><span class="facebook"></span> Facebook</a></li>
+      <li><a href="https://www.instagram.com/carolina_nascimento_interiores" target="_blank" rel="noopener"><span class="instagram"></span> Instagram</a></li>
     </ul>
-
-  </div>
-
-  <span id="menu-trigger">Menu</span>
-
+  </nav>
 </header>

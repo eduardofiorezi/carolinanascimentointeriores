@@ -1,16 +1,19 @@
 ---
 layout: default
-body_id: portfolio
+title: Portfólio de interiores
+description: Conheça os projetos de arquitetura de interiores de Carolina Nascimento, com fotos dos apartamentos CEF e JRL.
+active: portfolio
 ---
-
+<h1 class="list-heading">Portfólio de interiores</h1>
 <ul class="portfolio-list">
   {% for project in site.data.projects %}
+    {% assign cover = project.photos | first %}
     <li>
-      <a href="projeto.html">
+      <a href="{{ project.url | relative_url }}">
         <div class="crop">
-          <img src="assets/projects/{{ project.folder }}/01.jpg">
+          <img src="{{ cover.src | relative_url }}" alt="" width="{{ cover.width }}" height="{{ cover.height }}">
         </div>
-        <h2>{{ project.name}}</h2>
+        <h2>{{ project.name | escape }}</h2>
       </a>
     </li>
   {% endfor %}

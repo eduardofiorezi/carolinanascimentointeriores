@@ -1,17 +1,24 @@
+{% capture title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endcapture %}
+{% assign description = page.description | default: site.description %}
+{% assign canonical = page.url | absolute_url %}
+{% assign image = page.image | default: site.image %}
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
-
-  <link href="/css/bxslider.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/vegas.css">
-
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+  <title>{{ title | escape }}</title>
+  <meta name="description" content="{{ description | escape }}">
+  <link rel="canonical" href="{{ canonical | escape }}">
+  {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:title" content="{{ title | escape }}">
+  <meta property="og:description" content="{{ description | escape }}">
+  <meta property="og:url" content="{{ canonical | escape }}">
+  <meta property="og:image" content="{{ image | absolute_url | escape }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;display=swap">
+  <link rel="stylesheet" href="{{ '/css/bxslider.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/vegas.css' | relative_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
 </head>
